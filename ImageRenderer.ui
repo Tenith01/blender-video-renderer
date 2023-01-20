@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>771</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>771</width>
+    <height>440</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>771</width>
+    <height>440</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>771</width>
+    <height>440</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/Icons/Screenshot_from_2023-01-14_05-34-41-removebg-preview.png</normaloff>:/Icons/Screenshot_from_2023-01-14_05-34-41-removebg-preview.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>0.930000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #333333;
+    color: rgb(136, 138, 133);
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 14px;
+}</string>
+  </property>
+  <widget class="QPushButton" name="RenderButton">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>290</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #4d91ea;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #3f7ab7;
+}
+
+QPushButton:pressed {
+    background-color: #3f7ab7;
+}</string>
+   </property>
+   <property name="text">
+    <string>Render</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+QLabel:hover {
+    background-color: #333333;
+}</string>
+   </property>
+   <property name="text">
+    <string>Blender File's Location : </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AddButton">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>210</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Open Sans</family>
+     <pointsize>-1</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #4d91ea;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #3f7ab7;
+}
+
+QPushButton:pressed {
+    background-color: #3f7ab7;
+}</string>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>330</y>
+     <width>711</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Open Sans</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar{
+    color: rgb(238, 238, 236);
+
+}
+
+QProgressBar:hover {
+    background-color: rgb(238, 238, 236);
+}
+</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="RenderStatLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: rgb(136, 138, 133);
+    border-radius: 10px;
+}
+
+QLabel:hover {
+    background-color: #333333;
+}</string>
+   </property>
+   <property name="text">
+    <string>Copleted 12/40 :</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>380</y>
+     <width>711</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar{
+    color: rgb(238, 238, 236);
+
+}
+
+QProgressBar:hover {
+    background-color: rgb(238, 238, 236);
+}
+</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="RenderStatLabel_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>360</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: rgb(136, 138, 133);
+    border-radius: 10px;
+}
+
+QLabel:hover {
+    background-color: #333333;
+}</string>
+   </property>
+   <property name="text">
+    <string>Rendering......</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>711</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	background-color: #333333;
+    color: #ffffff;
+    border: 1px solid rgb(85, 87, 83);
+    padding: 5px;
+    border-radius: 6px;
+}
+
+
+
+QWidget:hover {
+    background-color:#333330;
+    color: #ffffff;
+}
+
+QWidget:pressed {
+    background-color: #333333;
+    color: #ffffff;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RemoveButton">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>210</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Open Sans</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+    background-color: rgb(213, 85, 85);
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #rgb(150 85, 85);
+}
+
+QPushButton:pressed {
+    background-color: rgb(100, 50, 40);
+}</string>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ClearButton">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>210</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Open Sans</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+    background-color: rgb(213, 85, 85);
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #rgb(150 85, 85);
+}
+
+QPushButton:pressed {
+    background-color: rgb(100, 50, 40);
+}</string>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
